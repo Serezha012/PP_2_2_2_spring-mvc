@@ -1,10 +1,6 @@
 package web.model;
 
 import javax.persistence.*;
-import javax.validation.constraints.Digits;
-import javax.validation.constraints.Min;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.Size;
 
 @Entity
 @Table(name = "users")
@@ -27,7 +23,8 @@ public class User {
     @Column(name = "age")
     private int age;
 
-    public User(){}
+    public User() {
+    }
 
     public User(String Name, String surname, int old) {
         this.name = Name;
